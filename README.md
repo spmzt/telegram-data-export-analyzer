@@ -22,3 +22,9 @@ example:
 $ python3.7 telegramexport.py -i 1234 -f /home/user/Downloads/Telegram\ Desktop/DataExport_01_01_2019/result.json
 ```
 
+# Neo4j
+
+```
+MATCH (user:Person), (Telegram_msg:Messages), (Telegram_msg_reply:Messages)
+RETURN user, Telegram_msg, Telegram_msg_reply
+```
